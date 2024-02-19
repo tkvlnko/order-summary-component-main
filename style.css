@@ -10,23 +10,167 @@ body {
     justify-content: center;
     align-items: center;
 
+    font-size: 16px;
 }
 
+.content > p, .price-info-plan p:nth-child(2) {
+    color: hsl(226, 11%, 50%);
+    margin-top: 0.25rem;
+}
+
+span {
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    color: hsl(223, 47%, 23%);
+}
+
+.card > img {
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+}
 .price, .price-info, .card, .content  {
     display: flex;
     /* justify-content: center; */
-
 }
 
 .card {
-    max-width: 50%;
-    background-color: aqua;
+    max-width: 28%;
+    background-color: hsl(225, 100%, 98%);
     flex-direction: column;
+    border-radius: 20px;
 }
 
 .content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 2rem 2.5rem;
 }
+
+.price {
+    padding: 1.25rem 1rem;
+    background-color: hsla(222, 33%, 94%, 0.618);
+    border-radius: 10px;
+    box-sizing:border-box;
+    width: 100%;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+.price-info-plan > p {
+    margin: 0;
+}
+
+.price > button {
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.price > button:hover {
+    color: hsl(245, 90%, 68%);
+    transition: 0.3s ease;
+}
+
+.price-info > img {
+    height: 45px;
+    width: 45px;
+    margin-right: 1rem;
+}
+
+.content > button:nth-last-child(2) {
+    border: none;
+    border-radius: 12px;
+    box-sizing:border-box;
+    width: 100%;
+
+    padding: 1rem 1rem;
+    margin: 0.75rem 0 1.5rem 0;
+
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+
+    font-weight: 900;
+    font-size: 14px;
+
+    -webkit-box-shadow: 1px 20px 26px -9px hsla(245, 75%, 52%, 0.25);
+    -moz-box-shadow: 1px 20px 26px -9px hsla(245, 75%, 52%, 0.25);
+    box-shadow: 1px 20px 26px -9px hsla(245, 75%, 52%, 0.25);
+}
+
+.content > button:nth-last-child(2):hover {
+    background-color:  hsl(245, 90%, 68%);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.content > button:nth-last-child(1) {
+    border: none;
+    background-color: transparent;
+
+    font-weight: 900;
+    color:  hsl(224, 23%, 55%);
+
+    margin-bottom: 0.5rem;
+}
+
+.content > button:nth-last-child(1):hover {
+    color:  hsl(225, 19%, 36%);
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    transition: 0.5s ease;
+}
+
+
+
+@media screen and (max-width: 1300px){
+    .card {
+        max-width: 35%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .card {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .card {
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .card {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .card {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .card {
+        max-width: 90%;
+    }
+
+    .card > p {
+        font-size: 14px;
+    }
+}
+
+
 
